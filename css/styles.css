@@ -1,0 +1,330 @@
+/* RESET */
+body,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold2 {
+    font-weight: bold;
+    color: #FFF;
+    font-family: Josefin Sans;
+}
+
+.container-geral {
+    max-width: 100%;
+    background-color: #67aac7;
+}
+
+/* ESTILIZANDO CABEÇALHO */
+
+.header {
+    background-color: #67aac7;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu img,
+.menu img-dente-2 {
+    height: 100px;
+}
+
+/* DENTE DE LEÃO HEADER LADO DIREITO */
+@media screen and (max-width: 600px) {
+    .img-dente-2 {
+        display: none;
+    }
+}
+
+.menu li a {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 600px) {
+    .menu li a {
+        align-items: center;
+        font-size: 22px;
+        font-family: Josefin Sans;
+    }
+}
+
+/* FIM HEADER */
+/* LOGO e PRIMEIRA IMAGEM */
+
+.container_imagens {
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* LOGO e FOTO em VERTICAL */
+@media screen and (max-width: 600px) {
+    .container_imagens {
+        display: block;
+        padding: 10px;
+    }
+}
+
+.imagem-logo img {
+    width: 400px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .imagem-logo img {
+        width: 250px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .imagem-logo img {
+        width: 300px;
+    }
+}
+
+.imagem-destaque img {
+    height: 450px;
+}
+
+@media screen and (max-width: 600px) {
+    .imagem-destaque img {
+        height: 300px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .imagem-destaque img {
+        height: 350px;
+    }
+}
+
+.imagem-destaque figcaption {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Josefin Sans;
+    max-width: 400px;
+}
+
+/* QUEM SOU EU? */
+
+.texto-depois-imagem {
+    background-color: #67aac7;
+    padding: 10px;
+}
+
+.texto-depois-imagem p {
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+    text-align: justify;
+}
+
+/* COMO POSSO TE AJUDAR  */
+.ajudar-voce {
+    background-color: #FFF;
+    padding: 15px;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 600px) {
+    .ajudar-voce {
+        padding: 0px;
+    }
+}
+
+.ajudar-voce h2 {
+    text-align: center;
+    color: tomato;
+    font-size: 30px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+    .ajudar-voce h2 {
+        padding-top: 15px;
+    }
+}
+
+.links {
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .links {
+        padding: 10px;
+    }
+}
+
+.ajudar-voce li {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.ajudar-voce a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.8;
+}
+
+.ajudar-voce a:hover {
+    opacity: 1;
+    color: tomato;
+}
+
+/* TCC - SEGUNDA IMAGEM */
+
+.container-imagem2 {
+    max-width: 1100px;
+    background-color: #67aac7;
+    margin-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container-imagem2 {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .container-imagem2 {
+        display: block;
+        text-align: center;
+    }
+}
+
+.curiosidades {
+    padding: 10px;
+    margin-top: 22px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: justify;
+    text-align: center;
+}
+
+.curiosidades p {
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+    text-align: justify;
+}
+
+/* IMAGEM 2*/
+
+.imagem-2 img {
+    width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .imagem-2 img {
+        width: 300px;
+    }
+}
+
+.imagem-2 figcaption {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* FALE COMIGO */
+
+.fale-comigo-geral {
+    background-color: #FFF;
+    height: 130px;
+    text-align: center;
+    padding: 25px;
+}
+
+/* @media screen and (max-width: 600px) {
+    .fale-comigo-geral {
+        height: 95px;
+        padding: 15px;
+    }
+} */
+
+.fale-comigo p {
+    font-size: 30px;
+    color: #25D366;
+    height: 80px;
+}
+
+/* @media screen and (max-width: 600px) {
+    .fale-comigo p {
+        height: 50px;
+    }
+} */
+
+.btn-fale-comigo a {
+    background-color: tomato;
+    padding: 15px 25px;
+    font-size: 25px;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.btn-fale-comigo a:hover {
+    opacity: 1;
+}
+
+/* FOOTER */
+
+.rodape {
+    background-color: #67aac7;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape p {
+    font-size: 18px;
+    color: #FFF;
+    font-family: Josefin Sans;
+    text-align: center;
+}
+
+/* AGENDE SUA CONSULTA - IMAGEM FIXA */
+
+.imagem-fixa1 img {
+    width: 100px;
+    height: auto;
+    position: fixed;
+    top: 150px;
+    right: 0px;
+}
