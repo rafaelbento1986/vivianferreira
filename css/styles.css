@@ -68,6 +68,14 @@ a {
     }
 }
 
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    .menu li a {
+        align-items: center;
+        font-size: 22px;
+        font-family: Josefin Sans;
+    }
+}
+
 /* FIM HEADER */
 /* LOGO e PRIMEIRA IMAGEM */
 
@@ -99,9 +107,9 @@ a {
     }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 900px) {
     .imagem-logo img {
-        width: 300px;
+        width: 250px;
     }
 }
 
@@ -115,20 +123,31 @@ a {
     }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 900px) {
     .imagem-destaque img {
-        height: 350px;
+        height: 250px;
     }
 }
 
 .imagem-destaque figcaption {
     margin-bottom: 25px;
     font-size: 20px;
-    font-style: italic;
+    font-style: inherit;
     text-align: center;
     margin: 0 auto;
     font-family: Josefin Sans;
     max-width: 400px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    .imagem-destaque figcaption {
+        font-size: 15px;
+        font-style: inherit;
+        text-align: center;
+        margin: 0 auto;
+        font-family: Josefin Sans;
+        max-width: 250px;
+    }
 }
 
 /* QUEM SOU EU? */
@@ -145,9 +164,11 @@ a {
     font-size: 22px;
     text-align: center;
     text-align: justify;
+    color: #FFF;
 }
 
 /* COMO POSSO TE AJUDAR  */
+
 .ajudar-voce {
     background-color: #FFF;
     padding: 15px;
@@ -203,7 +224,7 @@ a {
     color: tomato;
 }
 
-/* TCC - SEGUNDA IMAGEM */
+/* TCC e SEGUNDA IMAGEM */
 
 .container-imagem2 {
     max-width: 1100px;
@@ -211,6 +232,7 @@ a {
     margin-top: 20px;
     margin: 0 auto;
     text-align: center;
+    color: #FFF;
 }
 
 @media screen and (max-width: 600px) {
@@ -220,7 +242,7 @@ a {
     }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 900px) {
     .container-imagem2 {
         display: block;
         text-align: center;
@@ -271,24 +293,11 @@ a {
     padding: 25px;
 }
 
-/* @media screen and (max-width: 600px) {
-    .fale-comigo-geral {
-        height: 95px;
-        padding: 15px;
-    }
-} */
-
 .fale-comigo p {
     font-size: 30px;
     color: #25D366;
     height: 80px;
 }
-
-/* @media screen and (max-width: 600px) {
-    .fale-comigo p {
-        height: 50px;
-    }
-} */
 
 .btn-fale-comigo a {
     background-color: tomato;
@@ -313,13 +322,13 @@ a {
 }
 
 .rodape p {
-    font-size: 18px;
+    font-size: 14px;
     color: #FFF;
     font-family: Josefin Sans;
     text-align: center;
 }
 
-/* AGENDE SUA CONSULTA - IMAGEM FIXA */
+/* AGENDE SUA CONSULTA - IMAGEM FIXA WHATSAPP */
 
 .imagem-fixa1 img {
     width: 100px;
