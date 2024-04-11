@@ -1,4 +1,4 @@
-// ESQUERDA DIREITA
+// ESQUERDA DIREITA SEGUE
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach( (entry) => {
         if(entry.isIntersecting) {
