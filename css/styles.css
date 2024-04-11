@@ -167,67 +167,65 @@ a {
     color: #FFF;
 }
 
-/* COMO POSSO TE AJUDAR  */
-
-.ajudar-voce {
+/* NÚMEROS DE EXPERIÊNCIA  */
+.fundo-base {
     background-color: #FFF;
-    padding: 15px;
-    margin: 0px auto;
-}
-
-@media screen and (max-width: 600px) {
-    .ajudar-voce {
-        padding: 0px;
-    }
-}
-
-.ajudar-voce h2 {
-    text-align: center;
-    color: tomato;
-    font-size: 30px;
-    font-style: italic;
-}
-
-@media screen and (max-width: 600px) {
-    .ajudar-voce h2 {
-        padding-top: 15px;
-    }
-}
-
-.links {
     display: flex;
-    max-width: 1100px;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
+    padding: 30px;
 }
 
 @media screen and (max-width: 600px) {
-    .links {
-        padding: 10px;
+    .fundo-base {
+        display: block;
     }
 }
 
-.ajudar-voce li {
-    padding: 10px;
-    font-size: 20px;
+.informacoes3 {
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-.ajudar-voce a {
-    text-decoration: none;
-    color: #000;
-    opacity: 0.8;
+@media screen and (max-width: 600px) {
+    .informacoes3 {
+        display: grid;
+        padding: 20px;
+    }
 }
 
-.ajudar-voce a:hover {
-    opacity: 1;
-    color: tomato;
+.h1 {
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.numeros-corbase {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 55px;
+    color: #56b9c2;
+}
+
+.img-cicle {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .img-cicle {
+        display: none;
+    }
 }
 
 /* TCC e SEGUNDA IMAGEM */
 
 .container-imagem2 {
-    max-width: 1100px;
+
     background-color: #67aac7;
     margin-top: 20px;
     margin: 0 auto;
@@ -250,6 +248,7 @@ a {
 }
 
 .curiosidades {
+    max-width: 1100px;
     padding: 10px;
     margin-top: 22px;
     margin: 0 auto;
@@ -331,7 +330,7 @@ a {
 /* AGENDE SUA CONSULTA - IMAGEM FIXA WHATSAPP */
 
 .imagem-fixa1 img {
-    width: 100px;
+    width: 180px;
     height: auto;
     position: fixed;
     top: 150px;
