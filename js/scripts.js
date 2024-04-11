@@ -1,5 +1,5 @@
 // ESQUERDA DIREITA SEGUE
-const myObserver = new IntersectionObserver((entries) => {
+let myObserver = new IntersectionObserver((entries) => {
     entries.forEach( (entry) => {
         if(entry.isIntersecting) {
             entry.target.classList.add('show')
@@ -9,6 +9,6 @@ const myObserver = new IntersectionObserver((entries) => {
     })
 })
 
-const elements = document.querySelectorAll('.leftsegue')
+let elements = document.querySelectorAll('.leftsegue')
 
 elements.forEach((element) => myObserver.observe(element))
