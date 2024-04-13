@@ -51,6 +51,7 @@ a {
 }
 
 /* DENTE DE LEÃO HEADER LADO DIREITO */
+
 @media screen and (max-width: 600px) {
     .img-dente-2 {
         display: none;
@@ -89,6 +90,7 @@ a {
 }
 
 /* LOGO e FOTO em VERTICAL */
+
 @media screen and (max-width: 600px) {
     .container_imagens {
         display: block;
@@ -169,6 +171,7 @@ a {
 }
 
 /* NÚMEROS DE EXPERIÊNCIA  */
+
 .fundo-base {
     background-color: #FFF;
     display: flex;
@@ -300,7 +303,7 @@ a {
 @media screen and (max-width: 600px) {
     .tab-content p {
         text-align: justify;
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
