@@ -169,6 +169,7 @@ a {
 }
 
 /* NÚMEROS DE EXPERIÊNCIA  */
+
 .fundo-base {
     background-color: #FFF;
     display: flex;
@@ -300,7 +301,7 @@ a {
 @media screen and (max-width: 600px) {
     .tab-content p {
         text-align: justify;
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
