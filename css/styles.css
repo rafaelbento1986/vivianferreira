@@ -86,6 +86,12 @@ a {
     font-size: 28px;
 }
 
+@media screen and (max-width: 780px) {
+    .menu li a {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .menu li a {
         font-size: 16px;
@@ -124,6 +130,19 @@ a {
     padding-top: 10px;
 }
 
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    .imagem-logo img {
+        width: 200px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    .imagem-logo img {
+        width: 180px;
+        padding-top: 5px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .imagem-logo img {
         width: 250px;
@@ -131,25 +150,25 @@ a {
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 900px) {
-    .imagem-logo img {
-        width: 250px;
-    }
-}
-
 .imagem-destaque img {
     height: 450px;
-}
-
-@media screen and (max-width: 600px) {
-    .imagem-destaque img {
-        height: 300px;
-    }
 }
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
     .imagem-destaque img {
         height: 250px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    .imagem-destaque img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagem-destaque img {
+        height: 300px;
     }
 }
 
@@ -189,6 +208,31 @@ a {
     color: #FFF;
 }
 
+
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    .texto-depois-imagem p {
+        max-width: 600px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .texto-depois-imagem p {
+        /* max-width: 600px; */
+        margin: 0 15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .texto-depois-imagem p {
+        /* max-width: 600px; */
+        margin: 0 15px;
+        font-size: 14px;
+    }
+}
+
 /* NÚMEROS DE EXPERIÊNCIA  */
 
 .fundo-base {
@@ -196,6 +240,14 @@ a {
     display: flex;
     justify-content: center;
     padding: 30px;
+}
+
+@media screen and (max-width: 780px) {
+    .fundo-base {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -211,6 +263,13 @@ a {
     align-items: center;
 }
 
+
+@media screen and (max-width: 780px) {
+    .informacoes3 {
+        padding: 5px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .informacoes3 {
         display: grid;
@@ -224,11 +283,48 @@ a {
     text-align: center;
 }
 
+@media screen and (max-width: 780px) {
+    .h1 {
+        font-size:35px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .h1 {
+        font-size:45px;
+    }
+}
+
 .numeros-corbase {
     line-height: 1;
     font-weight: bold;
     font-size: 55px;
     color: #56b9c2;
+}
+
+@media screen and (max-width: 780px) {
+    .numeros-corbase {
+        font-size:22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .numeros-corbase {
+        font-size:42px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .titulos-corbase {
+        font-size:13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titulos-corbase {
+        font-size:18px;
+    }
 }
 
 .img-cicle {
@@ -237,6 +333,13 @@ a {
     width: 300px;
     object-fit: cover;
     text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+    .img-cicle {
+        height: 150px;
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -273,6 +376,13 @@ a {
     border-radius: 1rem;
     font-size: 20px;
     font-weight: 550;
+}
+
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    .btn-magico {
+        width: min(70%, 750px);
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -364,6 +474,12 @@ a {
 }
 
 
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    .tab label  {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .tab label {
         width: min(100%);
@@ -406,6 +522,12 @@ a {
     }
 }
 
+@media screen and (max-width: 380px) {
+    .fale-comigo-geral {
+        display: grid;
+    }
+}
+
 /* IMAGEM 2*/
 .imagem-2 img {
     border-radius: 50%;
@@ -415,9 +537,23 @@ a {
     text-align: center;
 }
 
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    .imagem-2 img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .imagem-2 img {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .imagem-2 img {
+        width: 200px;
+        height: auto;
     }
 }
 
@@ -433,6 +569,19 @@ a {
     font-weight: 450;
 }
 
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    .fale-comigo p {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .fale-comigo p {
+        font-size: 20px;
+    }
+}
+
 .btn-fale-comigo a {
     background-color: #25D366;
     padding: 15px 25px;
@@ -440,6 +589,22 @@ a {
     opacity: 0.8;
     border-radius: 50px;
 }
+
+@media screen and (orientation: landscape) and (max-width: 780px) {
+    .btn-fale-comigo a {
+        background-color: #25D366;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .btn-fale-comigo a {
+        padding: 10px;
+        font-size: 22px;
+    }
+}
+
 
 .btn-fale-comigo a:hover {
     opacity: 1;
@@ -465,6 +630,12 @@ a {
 @media screen and (max-width: 600px) {
     .rodape p {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .rodape p {
+        font-size: 10px;
     }
 }
 
