@@ -339,7 +339,7 @@ a {
 @media screen and (max-width: 600px) {
     .informacoes3 {
         display: grid;
-        padding: 20px;
+        padding: 3px;
     }
 }
 
@@ -351,14 +351,14 @@ a {
 
 @media screen and (max-width: 780px) {
     .h1 {
-        font-size:35px;
+        font-size: 35px;
     }
 }
 
 
 @media screen and (max-width: 600px) {
     .h1 {
-        font-size:45px;
+        font-size: 40px;
     }
 }
 
@@ -371,25 +371,25 @@ a {
 
 @media screen and (max-width: 780px) {
     .numeros-corbase {
-        font-size:22px;
+        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .numeros-corbase {
-        font-size:42px;
+        font-size: 42px;
     }
 }
 
 @media screen and (max-width: 780px) {
     .titulos-corbase {
-        font-size:13px;
+        font-size: 13px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .titulos-corbase {
-        font-size:18px;
+        font-size: 18px;
     }
 }
 
@@ -425,7 +425,7 @@ a {
 
 @media screen and (max-width: 600px) {
     .container-comoteajudo {
-        padding: 0;       
+        padding: 8px;
     }
 }
 
@@ -452,7 +452,13 @@ a {
 
 @media screen and (max-width: 600px) {
     .btn-magico {
-        width: min(90%, 750px);      
+        width: min(90%, 750px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        margin: 6px;
     }
 }
 
@@ -489,8 +495,6 @@ a {
 .tab input:checked~.tab-content {
     max-height: 500px;
     color: rgb(28, 95, 172);
-    /* text-align: left; */
-    /* text-align: justify; */
 }
 
 .tab-content p {
@@ -498,10 +502,17 @@ a {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (orientation: landscape) and (max-width: 780px) {
     .tab-content p {
         text-align: justify;
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tab-content p {
+        text-align: justify;
+        font-size: 13px;
     }
 }
 
@@ -518,7 +529,7 @@ a {
 @media screen and (max-width: 600px) {
     .tab-wrapper {
         width: 100%;
-        padding: 0.5rem 1rem;  
+        padding: 0.5rem 1rem;
         border-radius: 0.5rem 0.5rem 0 0;
         transition: background-color 0.25s ease-in;
         box-sizing: border-box;
@@ -542,7 +553,7 @@ a {
 
 
 @media screen and (orientation: landscape) and (max-width: 780px) {
-    .tab label  {
+    .tab label {
         font-size: 18px;
     }
 }
@@ -642,6 +653,11 @@ a {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .fale-comigo p {
+        font-size: 24px;
+    }
+}
 
 @media screen and (max-width: 380px) {
     .fale-comigo p {
