@@ -506,24 +506,39 @@ a {
 
 @media screen and (max-width: 900px) {
     .tab input:checked~.tab-content {
-        max-height: 750px;
+        max-height: 1000;
         color: rgb(28, 95, 172);
     }
 }
 
 @media screen and (max-width: 780px) {
     .tab input:checked~.tab-content {
-        max-height: 650px;
+        max-height: 1000;
+        color: rgb(28, 95, 172);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tab input:checked~.tab-content {
+        max-height: 1000px;
         color: rgb(28, 95, 172);
     }
 }
 
 @media screen and (max-width: 480px) {
     .tab input:checked~.tab-content {
-        max-height: 650px;
+        max-height: 1000px;
         color: rgb(28, 95, 172);
     }
 }
+
+@media screen and (max-width: 380px) {
+    .tab input:checked~.tab-content {
+        max-height: 1000px;
+        color: rgb(28, 95, 172);
+    }
+}
+
 
 .tab-content p {
     font-weight: 550;
