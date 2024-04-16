@@ -430,7 +430,7 @@ a {
 }
 
 .btn-magico {
-    width: min(80%, 1000px);
+    width: min(80%, 1050px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -439,14 +439,14 @@ a {
     padding: 0.5rem;
     border: none;
     border-radius: 1rem;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 550;
 }
 
 @media screen and (orientation: landscape) and (max-width: 780px) {
     .btn-magico {
-        width: min(70%, 750px);
-        font-size: 16px;
+        width: min(80%, 750px);
+        font-size: 15px;
     }
 }
 
@@ -476,6 +476,13 @@ a {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .tab {
+        width: min(100%);
+        border-radius: 0.5rem;
+    }
+}
+
 .tab:hover {
     color: #000;
 }
@@ -493,8 +500,29 @@ a {
 }
 
 .tab input:checked~.tab-content {
-    max-height: 500px;
+    max-height: 750px;
     color: rgb(28, 95, 172);
+}
+
+@media screen and (max-width: 900px) {
+    .tab input:checked~.tab-content {
+        max-height: 750px;
+        color: rgb(28, 95, 172);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .tab input:checked~.tab-content {
+        max-height: 650px;
+        color: rgb(28, 95, 172);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tab input:checked~.tab-content {
+        max-height: 650px;
+        color: rgb(28, 95, 172);
+    }
 }
 
 .tab-content p {
@@ -524,6 +552,16 @@ a {
     border-radius: 0.5rem 0.5rem 0 0;
     transition: background-color 0.25s ease-in;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 780px) {
+    .tab-wrapper {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+        transition: background-color 0.25s ease-in;
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: 600px) {
