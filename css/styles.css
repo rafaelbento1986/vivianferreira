@@ -42,7 +42,7 @@ a {
     padding: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .header {
         text-align: center;
     }
@@ -60,7 +60,7 @@ a {
     letter-spacing: 3px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .menu a {
         letter-spacing: 1px;
     }
@@ -84,13 +84,13 @@ a {
     font-size: 28px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .menu li a {
         font-size: 16px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .menu li a {
         font-size: 16px;
     }
@@ -118,7 +118,14 @@ a {
 
 /* LOGO e FOTO em VERTICAL */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .container_imagens {
+        gap: 1px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
     .container_imagens {
         display: block;
         padding: 10px;
@@ -131,20 +138,27 @@ a {
     padding-top: 10px;
 }
 
-@media screen and (orientation: landscape) and (max-width: 900px) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
     .imagem-logo img {
         width: 200px;
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .imagem-logo img {
         width: 180px;
         padding-top: 5px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .imagem-logo img {
+        width: 250px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
     .imagem-logo img {
         width: 250px;
         padding-top: 10px;
@@ -155,19 +169,25 @@ a {
     height: 450px;
 }
 
-@media screen and (orientation: landscape) and (max-width: 900px) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
     .imagem-destaque img {
         height: 250px;
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .imagem-destaque img {
         height: 200px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .imagem-destaque img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 425px) {
     .imagem-destaque img {
         height: 300px;
     }
@@ -182,13 +202,21 @@ a {
     max-width: 400px;
 }
 
-@media screen and (orientation: landscape) and (max-width: 900px) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
     .imagem-destaque figcaption {
         font-size: 15px;
         font-style: inherit;
         text-align: center;
         margin: 0 auto;
         max-width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .imagem-destaque figcaption {
+        font-size: 16px;
+        max-width: 300px;
     }
 }
 
@@ -216,19 +244,25 @@ a {
     border-radius: 10px;
 }
 
-@media screen and (orientation: landscape) and (max-width: 900px) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
     .resumo {
         width: 90%;
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .resumo {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .resumo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
     .resumo {
         width: 100%;
     }
@@ -276,14 +310,14 @@ a {
     border-radius: 26px;
 } */
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .texto-depois-imagem p {
         max-width: 600px;
         font-size: 16px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .texto-depois-imagem p {
         /* max-width: 600px; */
         margin: 0 15px;
@@ -291,7 +325,7 @@ a {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .texto-depois-imagem p {
         /* max-width: 600px; */
         margin: 0 15px;
@@ -308,7 +342,7 @@ a {
     padding: 30px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .fundo-base {
         display: flex;
         justify-content: center;
@@ -316,7 +350,7 @@ a {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .fundo-base {
         display: block;
     }
@@ -330,13 +364,13 @@ a {
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .informacoes3 {
         padding: 5px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .informacoes3 {
         display: grid;
         padding: 3px;
@@ -349,14 +383,14 @@ a {
     text-align: center;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .h1 {
         font-size: 35px;
     }
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .h1 {
         font-size: 40px;
     }
@@ -369,25 +403,25 @@ a {
     color: #56b9c2;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .numeros-corbase {
         font-size: 22px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .numeros-corbase {
         font-size: 42px;
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .titulos-corbase {
         font-size: 13px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .titulos-corbase {
         font-size: 18px;
     }
@@ -401,14 +435,14 @@ a {
     text-align: center;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .img-cicle {
         height: 150px;
         width: 150px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .img-cicle {
         display: none;
     }
@@ -423,7 +457,7 @@ a {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .container-comoteajudo {
         padding: 8px;
     }
@@ -443,20 +477,20 @@ a {
     font-weight: 550;
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .btn-magico {
         width: min(80%, 750px);
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .btn-magico {
         width: min(90%, 750px);
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     h1 {
         margin: 6px;
     }
@@ -469,14 +503,28 @@ a {
     border-radius: 2.5rem;
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .tab {
+        border-radius: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .tab {
         width: min(100%);
         border-radius: 0.5rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
+    .tab {
+        width: min(100%);
+        border-radius: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
     .tab {
         width: min(100%);
         border-radius: 0.5rem;
@@ -504,55 +552,47 @@ a {
     color: rgb(28, 95, 172);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .tab input:checked~.tab-content {
         max-height: 1000;
         color: rgb(28, 95, 172);
     }
 }
 
-@media screen and (max-width: 780px) {
-    .tab input:checked~.tab-content {
-        max-height: 1000;
-        color: rgb(28, 95, 172);
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .tab input:checked~.tab-content {
         max-height: 1000px;
         color: rgb(28, 95, 172);
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
     .tab input:checked~.tab-content {
         max-height: 1000px;
         color: rgb(28, 95, 172);
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .tab input:checked~.tab-content {
         max-height: 1000px;
         color: rgb(28, 95, 172);
     }
 }
-
 
 .tab-content p {
     font-weight: 550;
     margin-bottom: 15px;
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .tab-content p {
         text-align: justify;
         font-size: 14px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .tab-content p {
         text-align: justify;
         font-size: 13px;
@@ -572,7 +612,7 @@ a {
 @media screen and (max-width: 780px) {
     .tab-wrapper {
         width: 100%;
-        padding: 0.5rem 1rem;
+        padding: 0.1rem 1rem;
         border-radius: 0.5rem 0.5rem 0 0;
         transition: background-color 0.25s ease-in;
         box-sizing: border-box;
@@ -605,13 +645,13 @@ a {
 }
 
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .tab label {
         font-size: 18px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .tab label {
         width: min(100%);
         border-radius: 5rem;
@@ -645,15 +685,15 @@ a {
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .fale-comigo-geral {
         display: block;
         padding: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .fale-comigo-geral {
         display: grid;
     }
@@ -668,20 +708,20 @@ a {
     text-align: center;
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .imagem-2 img {
         height: 200px;
         width: 200px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .imagem-2 img {
         width: 300px;
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .imagem-2 img {
         width: 200px;
         height: auto;
@@ -700,21 +740,22 @@ a {
     font-weight: 450;
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .fale-comigo p {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .fale-comigo p {
         font-size: 24px;
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .fale-comigo p {
-        font-size: 20px;
+        font-size: 24px;
+        height: 67px;
     }
 }
 
@@ -726,7 +767,7 @@ a {
     border-radius: 50px;
 }
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .btn-fale-comigo a {
         background-color: #25D366;
         padding: 10px 20px;
@@ -734,7 +775,7 @@ a {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .btn-fale-comigo a {
         padding: 10px;
         font-size: 22px;
@@ -763,15 +804,15 @@ a {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .rodape p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .rodape p {
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
