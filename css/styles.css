@@ -7,7 +7,7 @@
     --color1-background-color: #67aac7;
     --color2-background-color: #f8fafc;
     --color3-background-color: #2e6897;
-    --color4-background-color: #002F31;
+    --color4-background-color: #606f7d;
 }
 
 /* RESET */
@@ -805,9 +805,10 @@ input[type="checkbox"] {
     padding: 12px;
     font-size: 18px;
     opacity: 0.8;
-    border-radius: 3px;
+    border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
