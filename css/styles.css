@@ -3,6 +3,12 @@
 /* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+    --color1-background-color: #67aac7;
+    --color2-background-color: #f8fafc;
+    --color3-background-color: #2e6897;
+}
+
 /* RESET */
 body,
 ul,
@@ -33,16 +39,17 @@ a {
 }
 
 .container-geral {
+    background-color: var(--color2-background-color);
     max-width: 100%;
 }
 
 /* ESTILIZANDO CABEÇALHO */
 
-.header {
-    background-color: #67aac7;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+header {
+    background-color: var(--color1-background-color);
+    box-shadow: 0.5px 0.5px 10px 0.5px #000;
+    padding: 1rem 2 rem;
+    position: relative;
 }
 
 @media screen and (max-width: 425px) {
@@ -52,49 +59,80 @@ a {
 }
 
 .menu {
+    max-width: 700px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 14px;
 }
 
-.menu a {
-    /* color: #3a3232; */
+.menu img {
+    height: 60px;
+}
+
+.menu p {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 20px;
+    color: var(--color2-background-color);
+}
+
+@media screen and (max-width: 768px) {
+    .menu p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-    .menu a {
+    .menu p {
         letter-spacing: 1px;
     }
 }
 
-.menu img,
-.menu img-dente-2 {
-    height: 100px;
+/* DARK MODE ICONES */
+input[type="checkbox"] {
     display: none;
 }
 
-.menu li a {
-    font-size: 28px;
+.bi {
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-    .menu li a {
-        font-size: 16px;
-    }
+.bi-moon-stars-fill {
+    display: none;
+    fill: #FFF;
 }
 
-@media screen and (max-width: 425px) {
-    .menu li a {
-        font-size: 16px;
-    }
+.bi-brightness-high-fill {
+    fill: yellow;
+}
+
+/* Dark theme */
+.dark header,
+.dark .texto-depois-imagem,
+.dark .containercomoteajudo,
+.dark .rodape {
+    background-color: var(--color3-background-color);
+}
+
+.dark .comoteajudo {
+    color: #FFF;
+}
+
+.dark .bi-brightness-high-fill {
+    display: none;
+}
+
+.dark .bi-moon-stars-fill {
+    display: block;
 }
 
 /* LOGO e PRIMEIRA IMAGEM */
 
 .container_imagens {
-    background-color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,8 +188,17 @@ a {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .imagem-logo img {
+        width: 180px;
+        padding-top: 10px;
+    }
+}
+
 .imagem-destaque img {
     height: 450px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
 }
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
@@ -178,6 +225,18 @@ a {
     }
 }
 
+@media screen and (max-width: 375px) {
+    .imagem-destaque img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .imagem-destaque img {
+        height: 200px;
+    }
+}
+
 .imagem-destaque figcaption {
     margin-bottom: 25px;
     font-size: 20px;
@@ -197,7 +256,6 @@ a {
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .imagem-destaque figcaption {
         font-size: 16px;
@@ -208,15 +266,16 @@ a {
 /* QUEM SOU EU? */
 
 .texto-depois-imagem {
-    background-color: #67aac7;
+    background-color: var(--color1-background-color);
     padding: 26px;
 }
 
 .resumo {
     width: 50%;
     margin: 0 auto;
-    background: #FFF;
+    background-color: var(--color2-background-color);
     border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
 }
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
@@ -261,7 +320,6 @@ a {
 
 @media screen and (max-width: 425px) {
     .texto-depois-imagem p {
-        /* max-width: 600px; */
         margin: 0 15px;
         font-size: 14px;
     }
@@ -269,7 +327,6 @@ a {
 
 @media screen and (max-width: 375px) {
     .texto-depois-imagem p {
-        /* max-width: 600px; */
         margin: 0 15px;
         font-size: 14px;
     }
@@ -278,7 +335,6 @@ a {
 /* NÚMEROS DE EXPERIÊNCIA  */
 
 .fundo-base {
-    background-color: #FFF;
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -331,7 +387,6 @@ a {
     }
 }
 
-
 @media screen and (max-width: 425px) {
     .h1 {
         font-size: 40px;
@@ -375,6 +430,7 @@ a {
     width: 300px;
     object-fit: cover;
     text-align: center;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
 }
 
 @media screen and (max-width: 768px) {
@@ -392,8 +448,8 @@ a {
 
 /* COMO TE AJUDO */
 
-.container-comoteajudo {
-    background-color: #67aac7;
+.containercomoteajudo {
+    background-color: var(--color1-background-color);
     margin: 0 auto;
     text-align: justify;
     padding-bottom: 20px;
@@ -441,10 +497,10 @@ a {
 .tab {
     width: 100%;
     position: relative;
-    background-color: #FFF;
+    background-color: var(--color2-background-color);
     border-radius: 2.5rem;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
 }
-
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
     .tab {
@@ -475,6 +531,7 @@ a {
 
 .tab:hover {
     color: #000;
+    background-color: #dadada;
 }
 
 .tab input {
@@ -586,7 +643,6 @@ a {
     border-radius: 0.5rem;
 }
 
-
 @media screen and (orientation: landscape) and (max-width: 768px) {
     .tab label {
         font-size: 18px;
@@ -619,9 +675,7 @@ a {
 /* FALE COMIGO */
 
 .fale-comigo-geral {
-    background-color: #FFF;
     text-align: center;
-    padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -648,6 +702,7 @@ a {
     width: 300px;
     object-fit: cover;
     text-align: center;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
@@ -678,7 +733,7 @@ a {
 .fale-comigo p {
     font-size: 30px;
     color: #000;
-    height: 80px;
+    height: 50px;
     font-weight: 450;
 }
 
@@ -697,20 +752,22 @@ a {
 @media screen and (max-width: 375px) {
     .fale-comigo p {
         font-size: 24px;
-        height: 67px;
+        height: 50px;
     }
 }
 
-.btn-fale-comigo a {
+.btn-fale-comigo {
     background-color: #25D366;
-    padding: 15px 25px;
-    font-size: 25px;
+    padding: 12px;
+    font-size: 18px;
     opacity: 0.8;
-    border-radius: 50px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
-    .btn-fale-comigo a {
+    .btn-fale-comigo {
         background-color: #25D366;
         padding: 10px 20px;
         font-size: 20px;
@@ -718,21 +775,22 @@ a {
 }
 
 @media screen and (max-width: 375px) {
-    .btn-fale-comigo a {
+    .btn-fale-comigo {
         padding: 10px;
         font-size: 22px;
     }
 }
 
-.btn-fale-comigo a:hover {
+.btn-fale-comigo:hover {
     opacity: 1;
+    transform: scale(1.04);
     background-color: #25D366;
 }
 
 /* FOOTER */
 
 .rodape {
-    background-color: #67aac7;
+    background-color: var(--color1-background-color);
     display: grid;
     text-align: center;
     margin: 0 auto;
@@ -764,7 +822,7 @@ a {
     justify-content: center;
     padding: 15px;
     gap: 1.2rem;
-} 
+}
 
 #footer_social_media .footer-link {
     display: flex;
@@ -777,11 +835,12 @@ a {
 }
 
 #footer_social_media .footer-link i {
-    font-size: 1.25rem;    
+    font-size: 1.25rem;
 }
 
 #footer_social_media .footer-link:hover {
     opacity: 0.8;
+    transform: scale(1.3);
 }
 
 #instagram {
@@ -802,6 +861,6 @@ a {
     width: 180px;
     height: auto;
     position: fixed;
-    top: 150px;
-    right: 0px;
+    top: 100px;
+    right: 20px;
 }
