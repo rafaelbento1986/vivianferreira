@@ -7,6 +7,7 @@
     --color1-background-color: #67aac7;
     --color2-background-color: #f8fafc;
     --color3-background-color: #2e6897;
+    --color4-background-color: #c7e0d3;
 }
 
 /* RESET */
@@ -53,7 +54,7 @@ header {
 }
 
 @media screen and (max-width: 425px) {
-    .header {
+    header {
         text-align: center;
     }
 }
@@ -116,6 +117,10 @@ input[type="checkbox"] {
 .dark .containercomoteajudo,
 .dark .rodape {
     background-color: var(--color3-background-color);
+}
+
+.dark .container-geral {
+    background-color: var(--color4-background-color);
 }
 
 .dark .comoteajudo {
