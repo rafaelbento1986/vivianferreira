@@ -7,7 +7,7 @@
     --color1-background-color: #67aac7;
     --color2-background-color: #f8fafc;
     --color3-background-color: #2e6897;
-    --color4-background-color: #c7e0d3;
+    --color4-background-color: #002F31;
 }
 
 /* RESET */
@@ -111,12 +111,32 @@ input[type="checkbox"] {
     fill: yellow;
 }
 
+.dark .imagem-logo .logo-azul {
+    display: none;
+}
+
+.imagem-logo .logo-branca {
+    display: none;
+}
+
+.dark .imagem-logo .logo-branca {
+    display: block;
+}
+
 /* Dark theme */
 .dark header,
 .dark .texto-depois-imagem,
 .dark .containercomoteajudo,
 .dark .rodape {
     background-color: var(--color3-background-color);
+}
+
+.dark header {
+    box-shadow: 0.5px 0.5px 10px 0.5px #FFF;
+}
+
+.dark .imagem-destaque img {
+    box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.336);
 }
 
 .dark .container-geral {
@@ -133,6 +153,17 @@ input[type="checkbox"] {
 
 .dark .bi-moon-stars-fill {
     display: block;
+}
+
+.dark .imagem-destaque figcaption,
+.dark .bold,
+.dark .fale-comigo p,
+.dark .informacoes3 {
+    color: #FFF;
+}
+
+.dark .informacoes3 .numeros-corbase {
+    color: var(--color1-background-color);
 }
 
 /* LOGO e PRIMEIRA IMAGEM */
@@ -161,40 +192,47 @@ input[type="checkbox"] {
     }
 }
 
-.imagem-logo img {
+.imagem-logo .logo-azul,
+.dark .imagem-logo .logo-branca {
     width: 400px;
     padding-top: 10px;
+    margin: 0 auto;
 }
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
-    .imagem-logo img {
+    .imagem-logo .logo-azul,
+    .dark .imagem-logo .logo-branca {
         width: 200px;
     }
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
-    .imagem-logo img {
+    .imagem-logo .logo-azul,
+    .dark .imagem-logo .logo-branca {
         width: 180px;
         padding-top: 5px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .imagem-logo img {
+    .imagem-logo .logo-azul,
+    .dark .imagem-logo .logo-branca {
         width: 250px;
         padding-top: 10px;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .imagem-logo img {
+    .imagem-logo .logo-azul,
+    .dark .imagem-logo .logo-branca {
         width: 250px;
         padding-top: 10px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .imagem-logo img {
+    .imagem-logo .logo-azul,
+    .dark .imagem-logo .logo-branca {
         width: 180px;
         padding-top: 10px;
     }
@@ -719,7 +757,8 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 425px) {
     .imagem-2 img {
-        width: 300px;
+        width: 250px;
+        height: auto;
     }
 }
 
